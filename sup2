@@ -1,5 +1,47 @@
 Task 1
 
-See png files
 
 Task 2
+
+Modularity is an approach when a problem is broken into smaller sub problems and then solved. In OOP paradigm modularity is implemented by the use of classes. Each class is developed and tested independently of another which significantly reduces the amount of bugs.
+
+Code re-use is an approach where the same code is used by other developers extensibly. For example a well developed class can be used by other developers for their own purposes without knowing the implementation details of it.
+
+Encapsulation is an approach where data is put into a class( usually with private access) such that the state of data cannot be seen/changed from the outside (only using accessor and mutator methods which are public). This approach ensure the untegrity of data.
+
+Task 3
+
+A class is a pattern that defines an object. A particular instance of a class is an object. (code example in previous supervision work)
+
+An abstract class is a patter that partially defines an object. An object of an abstract class cannot be instantiated as it has abstract methods the implementation for which is not defined. Instead other classes extend from the abstract class and provide implementation for abstract methods.
+
+public abstract class Animal {
+	public abstract void move();
+} 
+
+public class Dog extends Animal {
+	public void move() {
+		run_and_bark();
+	}
+}
+
+An interface is a purely abstract class which has no state but only method declaration. I assume that there are interfaces in java since an object cannot extend several parent objects unlike c++. Example of interface provided below.
+
+public interface Animal {
+	public void move();
+}
+
+public interface Eatable {
+	public void sacrificeYourself();
+}
+
+public class Panda implements Animal, Eatable {
+	public void move() {
+		move_slowly_and_cutely();
+	}
+	
+	public void sacrificeYourself() {
+		commit_cute_suicide();
+	}
+}
+
