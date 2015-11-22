@@ -74,4 +74,26 @@ b->dance();
 
 //In the example above "*a" wil dance tango, while "*b" will dance breakdance. If there were no virtual keyword in front of dance in Person both would dance tango, since in that case static polymorphism would be used. The reason why I used C++ for this example is that java has only dynamic polymorphism
 
+Task 5
+
+In my opinion it is impossible to do so without copying implementation of the methods. However, it would be very easy to do this in c++ by extending from both classes. Imho, devs of java eliminated a diamond problem but introduced inconveniences for software devs.
+
+
+Task 6
+
+Garbage collection is a process that is run continuosly every specific period of time that looks for objects in memory that do not have references to them and frees that memory. Garbage collection of course is an expensive(in terms of time) operation since it uses cpu resources, but convenient for a dev. The issue with finalizers is that we do not know whether a specific object will be garbage collected or not and hence a finalizer might not be called.
+
+Task 7
+
+We could change implementation of toString method. e.g.
+
+public void toString() {
+	return (name + " " + surname + "!!!!!");
+}
+
+Task 8
+
+
+Task 9
+
 
