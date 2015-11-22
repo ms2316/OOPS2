@@ -45,3 +45,33 @@ public class Panda implements Animal, Eatable {
 	}
 }
 
+Task 4
+
+Polymorphism is java is dynamic unlike in c++, where it can be static. Polymorphism means that a method can have different forms. In dynamic polymorphism a decision, which method to use, is made at run-time, while in static polymorphism it is decided on compile time.
+
+class Person {
+
+	public:
+		virtual void dance() {
+			tango();
+		}
+
+};
+
+class Student : public Person {
+	public:
+		void dance() {
+			breakdance();
+		}
+};
+
+Main function:
+
+Person *a = new Person();
+Person *b = new Student();
+a->dance();
+b->dance();
+
+//In the example above "*a" wil dance tango, while "*b" will dance breakdance. If there were no virtual keyword in front of dance in Person both would dance tango, since in that case static polymorphism would be used. The reason why I used C++ for this example is that java has only dynamic polymorphism
+
+
