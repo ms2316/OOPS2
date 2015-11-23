@@ -9,9 +9,8 @@ public class Hilo {
 	}
 
 	public void playNext() {
-		System.out.println("Enter your name then press enter");
+		String usrName = System.console().readLine("Enter your name then press enter: ");
 		
-
 	}
 
 }
